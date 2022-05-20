@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de ejercicios</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Repo de ejercicios de Mati Tonello</h1>
+    </header>
+
+    <main>
+        <div class="container__ejercicios">
+        <form id="ejer-form">
+        <label for="ejercicios">Selecciona un ejercicio</label>
+        <select name="ejercicios" id="ejercicios">
+            <option value="1">Seleccione un ejercicio</option>
+            <option value="2">Adicion y resta</option>
+            <option value="3">Paridades</option>
+            <option value="4">Palindromo</option>
+            <option value="5">Números romanos</option>
+        </select>
+
+        <div id="div__info">
+
+        </div>
+        <label class="input__function" for="miinput"></label>
+        <input type="textarea" name="miinput" id="miinput" placeholder="Ingrese aquí datos">
+        <div id="label__addition">
+            <label for="add">Ingrese el número que desea restar o agregar</label>
+            <input type="number" name="add" id="add">
+            <div class="radio">
+            <article>
+            <input type="radio" id="addcbox" name="addorrest" value="add" >
+            <label for="addcbox">Sumar</label>
+           </article>
+           <article>
+            <input type="radio" id="restcbox" name="addorrest" value="rest">
+            <label for="restcbox">Restar</label>
+            </article>
+            </div>
+            
+        </div>
+
+        <button type="submit" id="enviar">Enviar</button>
+        </div>
+    </form>
+
+        <div class="container__resultado">
+            <h2>Resultado</h2>
+
+            <div id="resultado">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="js-ejercicios/ejercicio1.js"></script>
+    <script src="js-ejercicios/ejercicio2.js"></script>
+    <script src="js-ejercicios/ejercicio3.js"></script>
+    <script src="js-ejercicios/ejercicio4.js"></script>
+    <script src="js-ejercicios/repoejercicios.js"></script>
+</body>
+</html>

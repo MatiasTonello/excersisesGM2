@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,100;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/img/fondo11.png);
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header h1{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+label, input, select{
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input{
+    background-color: black;
+    color: white;
+  
+}
+
+
+.radio{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+.container__ejercicios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.container__resultado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color: #fff;
+}
+
+#enviar{
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+
+    font-size: 16px;
+    
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    width: 30%;
+    display: block;
+    margin: auto;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#enviar:hover{
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+#label__addition{
+    display: none;
+}
+
+#resultado{
+    background-color: beige;
+    color: black;
+    padding: 30px;
+    display: none;
+}
