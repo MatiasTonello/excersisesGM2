@@ -9,22 +9,22 @@ dos elementos que sumados dan el
 mismo numero par entonces se
 devuelve true. */
 
+export function parity(array) {
+  let arrayPares = array.filter(
+    (numero) => numero % 2 == 0
+  ); /* Devuelve mi array de pares */
+  let pareja = false;
 
-function parity(array){
+  if (arrayPares.length === 0) return false;
 
-    let arrayPares = array.filter(numero => numero % 2 == 0); /* Devuelve mi array de pares */
-    let pareja = false;
-    
-    if(arrayPares.length === 0) return false;
-    
-    for(let i = 0; i<array.length; i++){
-        for(let j = i+1; j<array.length; j++){
-            let suma = array[i] + array[j];
-            if(suma === arrayPares.find(numero => numero === suma)){
-                pareja = true;
-            }
-            suma = 0;
-        }
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      let suma = array[i] + array[j];
+      if (suma === arrayPares.find((numero) => numero === suma)) {
+        pareja = true;
+      }
+      suma = 0;
     }
-    return pareja;
+  }
+  return pareja;
 }
